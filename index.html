@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projeto Responsivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('formAtendimento');
+        if (!form) return;
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const nome = form.querySelector('[name="nome"]').value.trim();
+          const telefone = form.querySelector('[name="telefone"]').value.trim();
+          const endereco = form.querySelector('[name="endereco"]').value.trim();
+          const aparelho = form.querySelector('[name="aparelho"]').value.trim();
+          const descricao = form.querySelector('[name="descricao"]').value.trim();
+          const mensagem = `Olá! Me chamo ${nome}.
+Tenho um problema com meu(a) ${aparelho}.
+Endereço: ${endereco}
+WhatsApp para contato: ${telefone}
+
+Descrição do problema:
+${descricao}`;
+          const numero = "5511993098049"; // Substitua pelo seu número real
+          const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+          window.open(link, '_blank');
+        });
+      });
+    </script>
+</head>
+<body>
+  <main>
+    <!-- Div só da imagem, sem texto dentro -->
+    <section id="presentation-container"></section>
+
+    <!-- Texto separado, logo abaixo da imagem -->
+    <section id="presentation">
+      <h1>Assistência Técnica de Eletrodomésticos</h1>
+      <p>Consertos rápidos, atendimento em domicílio e confiança garantida. Atendemos geladeiras, máquinas de lavar, micro-ondas e muito mais.</p>
+    </section>
+  </main>
+
+  <section class="container background-qualidades">
+    <h2 class="contactTitle">O que oferecemos de melhor?</h2>
+    <p>Serviços ágeis, atendimento em domicílio e confiança garantida</p>
+    <div id="qualities">
+      <div>Atendimento Rápido</div>
+      <img class="icon" src="img/ferramenta1.svg" alt="" />
+      <div>Orçamento sem compromisso</div>
+      <img class="icon" src="img/ferramenta2.svg" alt="" />
+      <div>Profissional qualificado</div>
+      <img class="icon" src="img/ferramenta3.svg" alt="" />
+      <div>Garantia nos serviços</div>
+      <img id="selogarantia" src="img/selogarantia.svg" alt="" />
+    </div>
+  </section>
+
+  <section class="container">
+    <article class="article-container">
+      <div class="article-detail">
+        <div>
+          <h2 class="contactTitle">Atendimento técnico especializado</h2>
+          <p>Com experiência em consertos de geladeiras, máquinas de lavar, micro-ondas e outros, oferecemos um serviço ágil, confiável e com garantia. Nosso técnico vai até sua casa e resolve o problema com profissionalismo e cuidado.</p>
+        </div>
+      </div>
+      <img class="imagem" src="img/tecnico1.png" alt="Técnico atendendo cliente" />
+    </article>
+
+    <article class="article-container">
+      <div class="article-detail">
+        <div>
+          <h2 class="contactTitle">Diagnóstico e reparo eficiente</h2>
+          <p>Usamos ferramentas modernas para identificar rapidamente o defeito do seu aparelho e realizar o conserto no menor tempo possível, sem comprometer a qualidade. Economize tempo e evite dor de cabeça com quem entende do assunto.</p>
+        </div>
+      </div>
+      <img class="imagem" src="img/tecnico2.jpg" alt="Técnico consertando eletrodoméstico" />
+    </article>
+  </section>
+
+  <section class="container background-qualidades" id="contato-servicos">
+    <h2 class="contactTitle">Contato e Serviços</h2>
+    <p>Atendemos na sua região com rapidez e qualidade. Confira nossos canais de contato e serviços oferecidos.</p>
+
+    <div class="info-contato">
+      <p><strong>Área de atendimento:</strong> São Paulo, ABC Paulista e região metropolitana</p>
+      <p><strong>Telefone / WhatsApp:</strong> <a href="https://wa.me/5511993098049" target="_blank" rel="noopener noreferrer">+55 (11) 99309-8049</a></p>
+      <p><strong>E-mail:</strong> <a href="mailto:contato@seusite.com">thiagobreier440@gmail.com</a></p>
+    </div>
+
+    <div class="servicos-oferecidos">
+      <h3>Serviços que oferecemos:</h3>
+      <ul>
+        <li>Conserto de geladeiras</li>
+        <li>Manutenção de máquinas de lavar</li>
+        <li>Reparo de micro-ondas</li>
+        <li>Outros eletrodomésticos em geral</li>
+        <li>Atendimento em domicílio</li>
+        <li>Orçamento sem compromisso</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="container background-contato" id="formulario">
+    <h2 class="contactTitle">Solicite seu atendimento</h2>
+    <p>Preencha o formulário e receba nosso retorno rapidamente pelo WhatsApp.</p>
+
+    <form id="formAtendimento">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="text" name="telefone" placeholder="Seu WhatsApp (DDD + número)" required />
+      <input type="text" name="endereco" placeholder="Endereço completo" required />
+      <input type="text" name="aparelho" placeholder="Qual eletrodoméstico está com problema?" required />
+      <textarea name="descricao" placeholder="Descreva o problema" required></textarea>
+      <button type="submit">Enviar via WhatsApp</button>
+    </form>
+  </section>
+</body>
+</html>
