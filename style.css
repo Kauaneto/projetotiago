@@ -4,6 +4,9 @@
   padding: 0;
   transition: all 0.3s ease;
 }
+p{
+  color: black;
+}
 
 html {
   font-family: "Poppins", sans-serif;
@@ -12,8 +15,8 @@ html {
 }
 
 body {
-  background: #0d1117;
-  color: #e6f1ff;
+  background: #f0f7fa;
+  color: black;
   line-height: 1.5;
 }
 
@@ -30,7 +33,7 @@ main {
   background-size: contain;
   height: 450px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(76, 201, 240, 0.2);
+  box-shadow: 0 4px 12px rgba(255, 140, 0, 0.2);
   margin-bottom: 1.5rem;
 }
 
@@ -39,17 +42,14 @@ main {
   margin: 0 auto 3rem auto;
   padding: 0 1rem;
   text-align: center;
-  color: #e6f1ff;
+  color: #2b2b2b;
 }
 
 #presentation h1 {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
-color: #00bfff;
-text-shadow: 0 0 3px #00bfff, 0 0 6px #0099cc;
-
-
+ color: #2b2b2b;
 }
 
 #presentation p {
@@ -68,24 +68,27 @@ text-shadow: 0 0 3px #00bfff, 0 0 6px #0099cc;
   font-size: 2.25rem;
   font-weight: 700;
   margin-bottom: 1rem;
-color: #00bfff;
-text-shadow: 0 0 3px #00bfff, 0 0 6px #0099cc;
-
+  color: #f57c00;
+ 
 }
 
 .background-qualidades {
-  background-color: #1a1f2b;
+  background-color: #003366; ;
   border-radius: 12px;
   padding: 3rem 1rem;
 }
-
+.background-qualidades > p {
+  color: white;
+}
 #qualities {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
-  color: #e6f1ff;
+  color:#ffffff;
+   background-color: #003366;
+  
 }
 
 #qualities > div {
@@ -97,10 +100,13 @@ text-shadow: 0 0 3px #00bfff, 0 0 6px #0099cc;
 .icon {
   width: 2.5rem;
   height: auto;
+   filter: invert(100%) brightness(200%);
+
 }
 
 #selogarantia {
   width: 60px;
+   filter: invert(100%) brightness(200%);
 }
 
 .article-container {
@@ -119,15 +125,14 @@ text-shadow: 0 0 3px #00bfff, 0 0 6px #0099cc;
 .article-detail {
   flex: 1 1 350px;
   text-align: left;
-  color: #e6f1ff;
+  color: #2b2b2b;
 }
 
 .article-detail h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-color: #00bfff;
-text-shadow: 0 0 3px #00bfff, 0 0 6px #0099cc;
-
+  color: #f57c00;
+  
 }
 
 .article-detail p {
@@ -139,17 +144,17 @@ text-shadow: 0 0 3px #00bfff, 0 0 6px #0099cc;
   flex: 1 1 350px;
   max-width: 350px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(76, 201, 240, 0.15);
+  box-shadow: 0 4px 10px rgba(255, 140, 0, 0.15);
   object-fit: cover;
   width: 100%;
   height: auto;
 }
 
 #contato-servicos {
-  background-color: #1a1f2b;
+  background-color: #003366;
   border-radius: 12px;
   padding: 3rem 2rem;
-  color: #e6f1ff;
+  color: #ffffff;
   text-align: left;
 }
 
@@ -157,8 +162,7 @@ text-shadow: 0 0 3px #00bfff, 0 0 6px #0099cc;
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 1rem;
-color: #00bfff;
-text-shadow: 0 0 3px #00bfff, 0 0 6px #0099cc;
+  color: #f57c00;
 
 }
 
@@ -171,19 +175,15 @@ text-shadow: 0 0 3px #00bfff, 0 0 6px #0099cc;
 }
 
 #contato-servicos a {
-color: #00bfff;
-text-shadow: 0 0 3px #00bfff, 0 0 6px #0099cc;
-
+  color: #ff9800;
   font-weight: 600;
   text-decoration: none;
- 
 }
+
 
 #contato-servicos a:hover {
   text-decoration: underline;
- color: #00bfff;
-text-shadow: 0 0 3px #00bfff, 0 0 6px #0099cc;
-
+  color: #005fa3;
 }
 
 #contato-servicos ul {
@@ -198,12 +198,15 @@ text-shadow: 0 0 3px #00bfff, 0 0 6px #0099cc;
   margin: 3rem auto 5rem;
   padding: 0 1rem;
   text-align: center;
+
 }
+
 
 #formulario form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  
 }
 
 #formulario input,
@@ -211,37 +214,50 @@ text-shadow: 0 0 3px #00bfff, 0 0 6px #0099cc;
   padding: 1rem;
   font-size: 1rem;
   border-radius: 6px;
-  border: 1px solid #4cc9f0;
-  background-color: #1e293b;
-  color: #e6f1ff;
+  border: 1px solid #007acc;
+  background-color:#003366;/* fundo mais escuro */
+  color: #ffffff; /* texto branco forte */
   font-family: "Manrope", sans-serif;
   width: 100%;
+}
+
+#formulario input::placeholder,
+#formulario textarea::placeholder {
+  color: #bbbbbb; /* placeholder cinza claro */
+  opacity: 1;
 }
 
 #formulario textarea {
   min-height: 120px;
   resize: vertical;
+ 
 }
 
 #formulario button {
-  background-color: #1e2a3a;
-  color: #4cc9f0;
+  background-color: #f57c00;       /* Laranja vibrante */
+  color: #ffffff;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
-  border: 1px solid #4cc9f0;
+  border: 1px solid #e65100;       /* Laranja queimado mais escuro */
   cursor: pointer;
   font-size: 1.2rem;
-  box-shadow: 0 0 8px #4cc9f0;
+  box-shadow: 0 0 8px #f57c00;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #formulario button:hover {
-  background-color: #4cc9f0;
-  color: #0d1117;
+  color: #ffffff;
   transform: scale(1.03);
-  box-shadow: 0 0 12px #4cc9f0;
+   background-color: #e65100;       /* Laranja escuro no hover */
+  box-shadow: 0 0 12px #f57c00;
 }
-
+.info-contato > p{
+  color: white;
+}
+#formulario > p{
+  color: black;
+}
 /* Responsividade */
 @media (max-width: 900px) {
   .article-container {
