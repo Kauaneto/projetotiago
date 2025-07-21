@@ -27,14 +27,15 @@ main {
 }
 
 #presentation-container {
-  background-image: url('img/bannernovo.jpg');
+  background-image: url('img/bannertiago1.jpg');
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+  background-position: center;
+  background-size: cover; /* Esse é o principal */
+  width: 100%;
   height: 450px;
-  border-radius: 12px;
+  border-radius: 0; /* Retira cantos arredondados se for para topo */
   box-shadow: 0 4px 12px rgba(255, 140, 0, 0.2);
-  margin-bottom: 1.5rem;
+ margin-bottom: 30px;
 }
 
 #presentation {
