@@ -292,6 +292,9 @@ main {
     width: 60%;
     height: 60%;
   }
+  #presentation-container {
+    height: 300px;
+  }
 
   .contactTitle {
     font-size: 2rem;
