@@ -74,5 +74,5 @@ Este projeto foi feito com carinho para ajudar um técnico de eletrodomésticos 
 ## 👨‍💻 Desenvolvido por
 
 **Kauã Neto de Jesus**  
-📧 **E-mail:** [kauaneto400@gmail.com](mailto:kauaneto400@gmail.com)  
-📱 **WhatsApp:** [Clique para conversar no WhatsApp](https://wa.me/5511989124208)
+📧 E-mail: kauaneto400@gmail.com  
+📱 WhatsApp: +55 11 98912-4208
