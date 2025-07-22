@@ -71,9 +71,9 @@ Você pode hospedar o site gratuitamente usando plataformas como GitHub Pages, N
 🧔 Sobre o Projeto
 Este projeto foi feito com carinho para ajudar um técnico de eletrodomésticos a iniciar sua jornada profissional, oferecendo uma presença online simples, funcional e eficaz.
 
-👨‍💻 Desenvolvido por
-Kauã Neto de Jesus
+## 👨‍💻 Desenvolvido por
+
+**Kauã Neto de Jesus**  
 📧 E-mail: [kauaneto400@gmail.com](mailto:kauaneto400@gmail.com)  
 📱 WhatsApp: [Clique para conversar no WhatsApp](https://wa.me/5511989124208)
-
 
